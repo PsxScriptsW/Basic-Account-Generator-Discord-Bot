@@ -96,7 +96,7 @@ async def gen(inter, stock):
     await user.send(embed=em)
     print(f"{inter.author.name} used (gen {stock}) -> Successful | {server_name}".replace(".txt",""))
 
-    await inter.send("Sent the account to your DMS!")
+    await inter.send("Check your dms😏")
     with open("Accounts//" + stock, "w", encoding='utf-8') as file:
         file.write("")  # Leeren der Datei
     with open("Accounts//" + stock, "a", encoding='utf-8') as file:
