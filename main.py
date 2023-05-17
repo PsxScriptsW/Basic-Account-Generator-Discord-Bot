@@ -62,7 +62,7 @@ async def on_ready():
     await venady.change_presence(
         activity=disnake.Activity(
             type=disnake.ActivityType.playing,
-            name=f'*dm U got Skillz#0021 if u want a bot like this'),
+            name=f'Partly made by Skillz#0021'),
             status=disnake.Status.online)
 
 
@@ -92,7 +92,7 @@ async def gen(inter, stock):
         account = random.choice(lines)
     em = disnake.Embed(title = " ", description = f"*This is your generated account* \n `{str(account)}` \n *The Order is Username:Password*", color = 0xFFFFFF, timestamp= datetime.datetime.utcnow())
     em.set_footer(text = f"{server_name}")
-    em.set_author(icon_url = "https://media.discordapp.net/attachments/1007664686679986186/1028340335732076634/venady_logo.png?width=676&height=676", name = f"{server_name} Account Generator")
+    em.set_author(icon_url = "https://cdn.discordapp.com/attachments/1105695134877761619/1108447196317229176/THIS_LOGO.jpg", name = f"{server_name} Account Generator")
     await user.send(embed=em)
     print(f"{inter.author.name} used (gen {stock}) -> Successful | {server_name}".replace(".txt",""))
 
