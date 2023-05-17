@@ -62,7 +62,7 @@ async def on_ready():
     await venady.change_presence(
         activity=disnake.Activity(
             type=disnake.ActivityType.playing,
-            name=f'*by gg/venady & nico| /help'),
+            name=f'*dm U got Skillz#0021 if u want a bot like this'),
             status=disnake.Status.online)
 
 
