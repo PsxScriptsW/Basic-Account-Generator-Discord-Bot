@@ -90,7 +90,7 @@ async def gen(inter, stock):
             return
     with open(f"Accounts//"+stock) as file:
         account = random.choice(lines)
-    em = disnake.Embed(title = " ", description = f"*This is your generated account* \n `{str(account)}` \n *The Order is Username:Password*", color = 0xFFFFFF, timestamp= datetime.datetime.utcnow())
+    em = disnake.Embed(title = " ", description = f"*This is your generated account* \n `{str(account)}` \n *The Order is Username:Password*", color = #FF0000, timestamp= datetime.datetime.utcnow())
     em.set_footer(text = f"{server_name}")
     em.set_author(icon_url = "https://cdn.discordapp.com/attachments/1105695134877761619/1108447196317229176/THIS_LOGO.jpg", name = f"{server_name} Account Generator")
     await user.send(embed=em)
@@ -139,8 +139,8 @@ async def stock(inter:disnake.ApplicationCommandInteraction):
 async def help(inter):
     """show you all commands."""
     server_name = inter.guild.name
-    help = disnake.Embed(title="Venady Help",description=f" ", color = 0xffffff, timestamp=datetime.datetime.utcnow())
-    help.set_footer(text =f"{server_name}", icon_url="https://media.discordapp.net/attachments/1007664686679986186/1028340335732076634/venady_logo.png?width=676&height=676")
+    help = disnake.Embed(title="Skillz gen help",description=f" ", color = #FF0000, timestamp=datetime.datetime.utcnow())
+    help.set_footer(text =f"{server_name}", icon_url="https://cdn.discordapp.com/attachments/1105695134877761619/1108447196317229176/THIS_LOGO.jpg")
 
 
     view = disnake.ui.View()
